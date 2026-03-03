@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home | Live On Art Studio</title>
+<title>Workshops | Live On Art Studio</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <script src="js/script.js"></script>
@@ -22,11 +22,21 @@
 </header>
 
 
-<section class="hero">
-    <div>
-        <h1>Contemporary Fine Art & Creative Experiences</h1>
-        <a href="gallery.html" class="btn">View Gallery</a>
-    </div>
+<section>
+<h2>Book a Workshop</h2>
+<form onsubmit="submitForm(event)">
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email Address" required>
+<input type="date" required>
+<select required>
+<option value="">Select Workshop Type</option>
+<option>Private Session</option>
+<option>Group Workshop</option>
+<option>Kids Art Class</option>
+</select>
+<textarea placeholder="Additional Notes"></textarea>
+<button class="btn" type="submit">Submit Booking</button>
+</form>
 </section>
 
 
